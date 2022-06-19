@@ -31,11 +31,6 @@ def scraper():
     # Update database with data being scraped
     mars_info.update_one({}, {"$set": mars_scrape}, upsert=True)
 
-    # if mars:
-    #     mars_table.update_one({"_id":mars["_id"]},{"$set": mars_data},upsert=True)
-    # else:
-    #     mars_table.insert_one(mars_data)
-
     # Redirect back to home page and return a message to show it was succesful
     return redirect("/")
 

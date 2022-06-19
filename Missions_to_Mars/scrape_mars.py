@@ -29,7 +29,7 @@ def scrape():
     # Call visit on our browser and pass the url we want to scrape
     browser.visit(url_news)
     
-   # 1 second delay for 
+   # 1 second time delay for error purposes    
     time.sleep(1)
 
     # Scrape page into soup and create a soup object from the html
@@ -50,8 +50,8 @@ def scrape():
     # Call visit on our browser and pass the url we want to scrape
     browser.visit(url_image)
     
-    # 1 second delay for 
-    time.sleep(1)
+    # 1 second time delay for error purposes    
+    time.sleep(1)   
 
     # Scrape page into soup and create a soup object from the html
     html = browser.html
@@ -94,7 +94,7 @@ def scrape():
     
     #Call visit on our browser and pass the url we want to scrape
     browser.visit(url_hemi)
-    # 1 second delay for 
+    # 1 second time delay for error purposes    
     time.sleep(1)
 
     # Scrape page into soup and create a soup object from the html
@@ -128,5 +128,3 @@ def scrape():
     # Quit the browser
     browser.quit()
     return mars_data
-
-print("____________________",scrape())
